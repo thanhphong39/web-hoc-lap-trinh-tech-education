@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Nhap</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="dangnhap.css">
+    <!-- Link js -->
+    <script src="script.js"></script>
+    <!-- Link icon -->
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'/>
+
+</head>
+<body>
+    <form id="form1">
+        <h2>Đăng Kí Khóa Học <i class='bx bxs-leaf'></i></h2>
+        <p>
+            <label>E-Mail Học Viên</label><br>
+            <input id="masv" type="text" class="txt">
+        </p>
+        <p>
+            <label>Họ và tên</label><br>
+            <input id="hoten" type="text" class="txt">
+        </p>
+        <p>
+            <label>Mật Khẩu :</label><br>
+            <input id="email" type="email" class="txt">
+        </p>
+        <p>
+            <fieldset id="fs1">
+                <legend> Giới tính </legend>
+                <input type="radio" name="phai" value="Nam"><label>Nam</label>
+                <input type="radio" name="phai" value="Nữ"><label>Nữ</label>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset id="fs2">
+                <legend> Sở Thích </legend>
+                <input type="checkbox" name="st" ><label>Đọc sách</label>
+                <input type="checkbox" name="st" ><label>Du lịch</label>
+                <input type="checkbox" name="st" ><label>Ẩm thực</label>
+                <input type="checkbox" name="st" ><label>Âm nhạc</label>
+                <input type="checkbox" name="st" ><label>Khác</label>
+            </fieldset>
+        </p>
+        <p>
+            <label>Quốc Tịch</label><br>
+            <select id="quoctich" class="txt">
+                <option value="0">Chọn quốc tịch</option>
+                <option value="1">Việt Nam</option>
+                <option value="2">Hoa Kì</option>
+                <option value="3">Trung Quốc</option>
+            </select>
+        </p>
+        <p>
+            <label>Ghi Chú</label><br>
+            <textarea id="ghichu" cols="54" rows="5" class="txt"></textarea>
+        </p>
+        <div id="baoloi"></div>
+        <button onclick="kiemtra()" type="button" id="dangki">Đăng Kí</button>
+        <a href="index.html"><button type="button" id="trolai">Về Trang Chủ <i class='bx bx-home'></i></button></a>
+    </form>
+</body>
+</html>
